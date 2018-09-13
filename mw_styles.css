@@ -32,7 +32,7 @@ footer {
     padding-bottom: 5px;
 }
 
-/* */
+/* I set the address element in the middle and created padding around to add space and also changed the size so the text is not to large or small for being inside the footer.*/
 address {
     font-style: normal;
     font-size: 0.9em;
@@ -49,6 +49,7 @@ h2 {
 }
 
 /* Navigation Styles */
+/* This part of the code affects the navigation, in order to specify what will be inherited by each element, I used the symbol that reresents and element is a child of the parent. The link and visited specifies what happens when a link is visited, in this code, nothing happens. For the active and hover, it affects what happens when you place the mouse over the text, in this code, it is changed by an rgb color.*/
 nav>ul {
     list-style-type: none;
     line-height: 2em;
@@ -67,6 +68,7 @@ nav>ul>li>a:hover {
 }
 
 /* Article Styles */
+/*The article element is identified as tour_summary, to affect the specific elements I first nested an h1 element so the heading can have a specific size in font and specific spacing to it's letter. Then, I placed the same identification but this time nested the p tag so the paragraphs can have it's specified size. */
 article#tour_summary h1 {
     font-size: 2.2em;
     letter-spacing: 0.2em;
@@ -76,6 +78,7 @@ article#tour_summary p {
     font-size: 1.1em;
 }
 
+/* In this element, I nested the p tag to the article that is identified as tour_summary, then used the pseudo element to classify what is being stylized which is the first line, it changed in size and into small-caps. */
 article#tour_summary p:first-of-type::first-line {
     font-size: 1.2em;
     font-variant: small-caps;
@@ -83,6 +86,7 @@ article#tour_summary p:first-of-type::first-line {
 
 
 /* Aside Styles */
+/* In the aside element, I identified the tour_itinerary to change the size of the font but created three different sets, one for the h1, one for the h2, and the last one the the p tag.*/
 aside#tour_itinerary h1 {
     font-size: 1.2em;
 }
@@ -95,6 +99,7 @@ aside#tour_itinerary p {
     font-size: 0.8em;
 }
 
+/*In this part, I used the pseudo element to determine what will be affected, for what is classified as odd, I change it tp the rgb color but made two different sets, one to nest the p tag and the other for the h2. I did the same thing for what is classified as even.*/
 aside p:nth-of-type(odd) {
     color: rgb(79, 91, 40);
 }
@@ -112,6 +117,7 @@ aside h2:nth-of-type(even) {
 }
 
 /* Blockquote Styles */
+/*The blockquote is placed with a specific color and the ofacity affects the transparency.The p tag was nested in the blockquote so that only the paragraph changes in padding, space around it.*/
 blockquote {
     background-color: rgb(173, 189, 227);
     color: rgb(255, 255, 255);
